@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C29EC005-D39D-4964-97E5-FE3933023C8F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>College_Management_System_301.My.MyApplication</StartupObject>
+    <RootNamespace>College_Management_System_301</RootNamespace>
+    <AssemblyName>College Management System 301</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>College Management System 301.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>College Management System 301.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database301_COLLEGE_MANAGEMENT_SYSTEMDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database301_COLLEGE_MANAGEMENT_SYSTEMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Page.Designer.vb">
+      <DependentUpon>Main Page.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Data.Designer.vb">
+      <DependentUpon>Staff Data.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Data.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Login.Designer.vb">
+      <DependentUpon>Student Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Information.Designer.vb">
+      <DependentUpon>Student Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff Login.Designer.vb">
+      <DependentUpon>Staff Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff information.Designer.vb">
+      <DependentUpon>Staff information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room Information.Designer.vb">
+      <DependentUpon>Room Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Room Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee Information.Designer.vb">
+      <DependentUpon>Fee Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fee Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Data.Designer.vb">
+      <DependentUpon>Student Data.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student Data.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Main Page.resx">
+      <DependentUpon>Main Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Data.resx">
+      <DependentUpon>Staff Data.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Login.resx">
+      <DependentUpon>Student Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Information.resx">
+      <DependentUpon>Student Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff Login.resx">
+      <DependentUpon>Staff Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff information.resx">
+      <DependentUpon>Staff information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room Information.resx">
+      <DependentUpon>Room Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee Information.resx">
+      <DependentUpon>Fee Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Data.resx">
+      <DependentUpon>Student Data.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Database301_COLLEGE_MANAGEMENT_SYSTEMDataSet.xsc">
+      <DependentUpon>Database301_COLLEGE_MANAGEMENT_SYSTEMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database301_COLLEGE_MANAGEMENT_SYSTEMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database301_COLLEGE_MANAGEMENT_SYSTEMDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database301_COLLEGE_MANAGEMENT_SYSTEMDataSet.xss">
+      <DependentUpon>Database301_COLLEGE_MANAGEMENT_SYSTEMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-College.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye open.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
