@@ -1,2 +1,2 @@
 # College-Management-System
-Visual Basic 
+Visual Basic Project
